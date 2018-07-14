@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ChannelOwnershipBot", "ChannelOwnershipBot\ChannelOwnershipBot.pyproj", "{3B96A9F5-EA9C-48F0-8F54-0E250E7D8A94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B96A9F5-EA9C-48F0-8F54-0E250E7D8A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B96A9F5-EA9C-48F0-8F54-0E250E7D8A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F67D366-01EA-438A-9B7D-FD95686124B6}
+	EndGlobalSection
+EndGlobal
