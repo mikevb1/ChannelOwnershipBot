@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3b96a9f5-ea9c-48f0-8f54-0e250e7d8a94</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ChannelOwnershipBot.py</StartupFile>
+    <StartupFile>bot.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ChannelOwnershipBot.py" />
+    <Compile Include="channelownership.py" />
+    <Compile Include="bot.py" />
+    <Compile Include="config.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.py.example" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
