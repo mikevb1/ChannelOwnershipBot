@@ -66,6 +66,16 @@ class ChannelOwnership:
         await channel_info.unlock()
         await ctx.send(f"{channel_info.channel} has been unlocked.")
 
+    @commands.commands()
+    @in_voice()
+    async def checkowner(self, ctx):
+        """Check who the owners of your room are."""
+        ci = self.channel_info[ctx.guild][ctx.author.voice.channel]
+        if len(ci.heirarchy > 1):
+            await ctx.send(f"The owners of {ci.channel} are {ci.heirarchy[0]} and {ci.heirarchy[1]}.")
+        else:
+            await ctx.send(f"You are the owner of {ci.channel}.")
+
     @commands.command(aliases=['shutdown', 'kill'])
     @commands.is_owner()
     async def close(self, ctx):
@@ -73,7 +83,8 @@ class ChannelOwnership:
         self.bot._process = False
         for guild, channels in self.channel_info.items():
             for channel, info in channels.items():
-                await info.unlock()
+                if channel.user_limit != info.initial_limit:
+                    await info.unlock()
         await ctx.send('Shutting down.')
         raise KeyboardInterrupt
 
