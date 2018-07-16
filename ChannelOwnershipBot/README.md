@@ -18,6 +18,6 @@ Commands:
 
 # Bot Owner Only
 ## !close | !shutdown | !kill
-#### Closest the bot gracefully, unlocking any channels that may be locked by users.
+#### Closes the bot gracefully, unlocking any channels that may be locked by users.
 
 \* If the bot is started with users already in voice channels, the first 2 users listed will become the owners.
